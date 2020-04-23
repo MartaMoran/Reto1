@@ -1,27 +1,36 @@
+body{
+    font-size: 14px;
+}
 header{
     display:flex;
     flex-direction:row;
     background-color:rgb(28, 36, 49);
     justify-content: flex-end;
     padding-top: 50px;
-    padding-left:50px;
-    padding-right:50px;
 }
-Header .navigation{
+.Intro{
+    display:flex;
+    flex-direction:row;
     font-family: 'Raleway', sans-serif;
+    list-style:none;
+    padding-right: 30px;
+
+}
+.navigation{
+    text-decoration:none;
     color:hsl(0, 0%, 100%);
-    text-decoration: none;
-    padding-right: 50px;
+    padding-right:10px;
+    font-weight: 700;
 }
 Header :nth-child(1) {
     flex-grow:1;
+    padding-left:30px;
 }
 
 #Presentation{
     display: flex;
     flex-direction: column;
     align-items:center;
-    font-size: 14px;
     font-family:'Open Sans', sans-serif;
     color:hsl(0, 0%, 100%);
     text-align: center;
@@ -30,11 +39,20 @@ Header :nth-child(1) {
     background-repeat:no-repeat;
     background-position: bottom;
 }
+.IllustrationComp{
+    padding-top:80px;
+}
+.secureLoc{
+    padding:10px;
+    font-weight:700;
+}
 #Presentation :nth-child(4){
     background-color:hsl(176, 68%, 64%);
     text-decoration:none;
     color:hsl(0, 0%, 100%);
+    font-weight: 700;
     text-align: center;
+    margin:30px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 60px;
@@ -43,30 +61,24 @@ Header :nth-child(1) {
 
 }
 #TechnicalAdvantages{
-    padding:60px;
     display:flex;
     flex-direction:row;
-    justify-content:center;
     flex-wrap:wrap;
+    padding:60px;
     color:hsl(0, 0%, 100%);
-    font-size:14px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    font-size: 14px;
     background-color: hsl(218, 28%, 13%);
 }
-.EasyAccess{
+.description{
     flex-basis:50%;
+    text-align: center;
 }
-.Security{
-    flex-basis:50%;
-    flex-grow:1;
+.icon {
+    width: 60;
 }
-.collab{
-    flex-basis:50%;
-}
-.Storage{
-    flex-basis:50%;
-}
+
 
 #Working{
     display:flex;
@@ -104,7 +116,10 @@ Header :nth-child(1) {
     display:flex;
     flex-direction:row;
 }
-
+.satish{
+    display:flex;
+    flex-direction:column;
+}
 #opinion .Profile{
     align-self:flex-start;
     border-radius: 100px;
@@ -112,7 +127,7 @@ Header :nth-child(1) {
     text-align:left;
 }
 
-#Access{
+#Join{
     background-color:hsl(218, 28%, 13%);
     padding:50px;
     color:hsl(0, 0%, 100%);
@@ -122,7 +137,7 @@ Header :nth-child(1) {
     text-align:center;
     padding-top:100px;
 }
-#Access :nth-child(1){
+.access{
     background-color: hsl(217, 28%, 15%);
     border-radius: 20px;
     padding-left:50px;
@@ -130,7 +145,7 @@ Header :nth-child(1) {
     padding-top:20px;
     padding-bottom:20px;
 }
-#Access .JoinAccess .mail{
+.mail{
     border-radius: 50px;
     padding-left:100px;
     padding-right:100px;
@@ -140,7 +155,7 @@ Header :nth-child(1) {
     margin-right:20px;
     background-color:hsl(0, 0%, 100%);
 }
-#Access .JoinAccess .Send{
+.Send{
     border-radius: 50px;
     background-color:hsl(198, 60%, 50%);
     color:hsl(0, 0%, 100%);
@@ -150,52 +165,95 @@ Header :nth-child(1) {
     padding-bottom:15px;
     border-style:none;
 }
-footer{
+.end{
     background-color:hsl(216, 53%, 9%);
-    color:hsl(0, 0%, 100%);
-    text-decoration:none;
     display:flex;
     flex-direction:row;
+    padding-top:50px;
+}
+.AboutUs{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+    color:hsl(0, 0%, 100%);
+}
+.Loren{
+    width: 300px;
+    text-align: left;
+    padding-top:50px;
+}
+.IconPhone{
     padding-top:100px;
-}
-footer #logofin{
-    padding-bottom:30px;
-}
-footer .End{
-    padding-right:30px;
-    padding-bottom:50px;
-}
-footer .contact{
-    padding-top: 80px;
-    padding-left:100px;
+    padding-left:50px;
 
 }
-footer .about{
-    padding-top: 80px;
-    padding-left:100px;    
+.IconMail{
+    padding-top:10px;
+    padding-left:50px;
 }
-footer .about :first-child{
-    text-decoration:none;
-    color:hsl(0, 0%, 100%);
-}
-footer .contacta{
-    padding-top:80px;
+.list{
+    list-style:none;
+    padding-top:90px;
     padding-left:100px;
+    padding-right:100px;
 }
-footer .contacta :first-child{
+.ContactRS{
     text-decoration:none;
     color:hsl(0, 0%, 100%);
+    padding-bottom:20px;
+
 }
-@media (max-width:375px){
- 
-    header{
-        font-weight: 400;
-    }
+
+
+@media (max-width:375px) {
+
     body{
-        font-weight: 400;
+        font-size:10px;
     }
-    #presentation {
-        background-image: url(bg-curvy-mobile.svg);
-
-    }
+   .intro{
+       padding-right: 10px;
+   }
+   .navigation{
+       padding:10px;
+   }
+   header :nth-child(1){
+       padding-left:0;
+       width: 90px;
+       flex-grow:0;
+   }
+   #Presentation{
+       background-image: url("bg-curvy-mobile.svg");
+   }
+   .IllustrationComp{
+       width: 200px;
+       padding-top:10px
+   }
+   #TechnicalAdvantages{
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+   }
+   #working{
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+   }
+   #working :nth-child(1){
+       width: 250px;
+   }
+   #Opinion{
+       display:flex;
+       flex-direction:column;
+       align-items:center;
+   }
+   .Client{
+       width: 200px;
+       margin-bottom: 20px;
+       padding: 20px;
+   }
+   .access{
+       width: 200px;
+   }
+   
 }
+

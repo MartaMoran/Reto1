@@ -106,21 +106,20 @@ Header :nth-child(1) {
     background-color: hsl(218, 28%, 13%);
     padding:50px;
 }
-#opinion .Client{
+.Client{
     background-color: hsl(219, 30%, 18%);
     border-radius:20px;
     margin-left:50px;
     margin-right:30px;
+    padding:15px;
 }
-#opinion .founder{
+
+.founder{
     display:flex;
     flex-direction:row;
 }
-.satish{
-    display:flex;
-    flex-direction:column;
-}
-#opinion .Profile{
+
+.Profile{
     align-self:flex-start;
     border-radius: 100px;
     width: 50px;
@@ -176,14 +175,15 @@ Header :nth-child(1) {
     flex-direction:column;
     align-items:start;
     color:hsl(0, 0%, 100%);
+    margin-left: 30px;
 }
 .Loren{
     width: 300px;
     text-align: left;
-    padding-top:50px;
+    padding-top:20px;
 }
 .IconPhone{
-    padding-top:100px;
+    padding-top:60px;
     padding-left:50px;
 
 }
@@ -193,47 +193,56 @@ Header :nth-child(1) {
 }
 .list{
     list-style:none;
-    padding-top:90px;
     padding-left:100px;
     padding-right:100px;
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
 .ContactRS{
     text-decoration:none;
     color:hsl(0, 0%, 100%);
-    padding-bottom:20px;
+    padding-bottom:40px;
 
 }
+.SocialNet{
+    display:flex;
+    flex-direction:row;
+}
+.logUlt{
+    width: 20px;
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 70px;
+}
 
-
-@media (max-width:375px) {
-
-    body{
+@media (max-width: 375px) {
+    body {
         font-size:10px;
     }
-   .intro{
+   .intro {
        padding-right: 10px;
    }
-   .navigation{
+   .navigation {
        padding:10px;
    }
-   header :nth-child(1){
+   header :nth-child(1) {
        padding-left:0;
        width: 90px;
        flex-grow:0;
    }
-   #Presentation{
+   #Presentation {
        background-image: url("bg-curvy-mobile.svg");
    }
-   .IllustrationComp{
+   .IllustrationComp {
        width: 200px;
        padding-top:10px
    }
-   #TechnicalAdvantages{
+   #TechnicalAdvantages {
        display:flex;
        flex-direction:column;
        align-items:center;
    }
-   #working{
+   #working {
        display:flex;
        flex-direction:column;
        align-items:center;
@@ -241,19 +250,14 @@ Header :nth-child(1) {
    #working :nth-child(1){
        width: 250px;
    }
-   #Opinion{
+   #Opinion {
        display:flex;
        flex-direction:column;
        align-items:center;
    }
-   .Client{
+   .Client {
        width: 200px;
        margin-bottom: 20px;
        padding: 20px;
    }
-   .access{
-       width: 200px;
-   }
-   
 }
-
